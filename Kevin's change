@@ -1,0 +1,21 @@
+import simple_animation as sa
+
+def draw_frame(frame_number, elapsed_seconds, width, height):
+    """Draws one frame of an animation. Called approx 60 times per second."""
+    
+    sa.fill_background("white") # Clear the background for this frame
+    
+    sa.draw_gradient_sky(800, 600)
+    
+    sa.draw_snowy_mountain(-200, 200, 300, 250, "#5a6b7c")
+    sa.draw_snowy_mountain(0, 200, 300, 250, "#5a6b7c")
+    sa.draw_snowy_mountain(200, 200, 300, 250, "#5a6b7c")
+    sa.draw_snowy_mountain(400, 200, 300, 250, "#5a6b7c")
+    sa.draw_snowy_mountain(600, 200, 300, 250, "#5a6b7c")
+    
+    # Draw the information text
+
+if __name__ == "__main__":
+    # Launch the wrapper and tell it to use our draw_frame function
+    sa.start(draw_frame)
+    
