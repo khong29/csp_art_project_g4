@@ -97,6 +97,31 @@ def loop_frames(start_val, end_val, total_frames, frame_number):
     return start_val + (total_distance * progress)
 
 
+def draw_road(x, top_y, width, length):
+    left = x - width // 2
+
+    # Light gray shoulder on each side
+    set_fill_color("#9a9a9a")
+    set_outline_color("#9a9a9a")
+    fill_rectangle(left - 4, top_y, width + 8, length)
+
+    # Main asphalt surface
+    set_fill_color("#4d4d4d")
+    set_outline_color("#3a3a3a")
+    set_line_thickness(1)
+    fill_rectangle(left, top_y, width, length)
+
+    # Dashed yellow centre line
+    set_fill_color("#f4d03f")
+    set_outline_color("#f4d03f")
+    dash_w = max(3, width // 12)
+    dash_h = 18
+    gap = 14
+    cx = x - dash_w // 2
+    y = top_y + 6
+    while y < top_y + length - dash_h:
+        fill_rectangle(cx, y, dash_w, dash_h)
+        y += dash_h + gap #AI made this
 
 def oscillate_motion(min_val, max_val, speed, frame_number):
     """

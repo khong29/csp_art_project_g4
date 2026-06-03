@@ -15,7 +15,8 @@ def draw_frame(frame_number, elapsed_seconds, width, height):
     sa.draw_snowy_mountain(600, 200, 300, 250, "#5a6b7c")
 
     sa.draw_grass_field(800, 600)
-
+    
+    sa.draw_road(715, 400, 70, 200) 
 
     sa.draw_pine(80, height - 80, 180)
     sa.draw_pine(180, height - 80, 140)
