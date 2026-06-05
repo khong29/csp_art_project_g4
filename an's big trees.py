@@ -54,3 +54,4 @@ def draw_frame(frame, elapsed, width, height):
     draw_round_tree(670, height - 80, 120)
 
 sa.start(draw_frame, width=800, height=500)
+#Attribution: This code was made by Gemini
