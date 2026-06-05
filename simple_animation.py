@@ -122,6 +122,8 @@ def draw_road(x, top_y, width, length):
     while y < top_y + length - dash_h:
         fill_rectangle(cx, y, dash_w, dash_h)
         y += dash_h + gap #AI made this
+        
+        #Made by Kyung Taek
 
 def oscillate_motion(min_val, max_val, speed, frame_number):
     """
@@ -426,6 +428,7 @@ def draw_house(x, y, size):
     set_fill_color("#d4a840")
     set_outline_color("#d4a840")
     fill_circle(x + door_w // 2 - 3, y - door_h // 2, 2)
+    #Made by Jayden
     
     
 def draw_grass_field(width, height):
@@ -451,6 +454,7 @@ def draw_grass_field(width, height):
     set_fill_color("#5a9c4f")
     set_outline_color("#5a9c4f")
     fill_rectangle(0, grass_y, width, 10)
+    #Made by Jayden
     
 
 
@@ -797,6 +801,7 @@ def draw_fish(x, y, size, color, direction):
     
 def draw_snowy_mountain(x, y, width, height, mountain_color):
     """
+    Kevin's procedure (1)
     Draws a standalone mountain peak with a white snow cap covering the summit and upper edges.
     
     AI Attribution: This function was generated using Gemini.
@@ -840,10 +845,12 @@ def draw_snowy_mountain(x, y, width, height, mountain_color):
         fill="white",
         outline="white",
         width=_line_thickness
+        #Made by Jayden
     )
 
 def draw_gradient_sky(width, height):
     """
+    Kevin's procedure (2)
     Draws a gradient sky background from white at the top to dark blue (#578ee6) at the bottom.
     
     AI Attribution: This function was generated using Gemini.
@@ -872,6 +879,7 @@ def draw_gradient_sky(width, height):
             0, y, width, y + band_thickness,
             fill=hex_color, outline=hex_color
         )
+        #Made by Jayden
         
 def draw_pine(x, y, height):
     """Draws a pine/spruce tree. x, y is the base center of the trunk."""
@@ -892,6 +900,7 @@ def draw_pine(x, y, height):
         fill_triangle(x - layer_w, layer_y + overlap,
                          x + layer_w, layer_y + overlap,
                          x, tip_y)
+        #Made by An
 
 def draw_round_tree(x, y, height):
     """Draws a round/deciduous tree. x, y is the base center of the trunk."""
@@ -915,7 +924,7 @@ def draw_round_tree(x, y, height):
     set_outline_color("#4e9e47")
     fill_circle(canopy_cx - int(canopy_r * 0.15), canopy_cy - int(canopy_r * 0.20), int(canopy_r * 0.45))
     
-
+    #Made by An
 
     
     
