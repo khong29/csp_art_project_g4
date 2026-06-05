@@ -19,7 +19,7 @@ def draw_pine(x, y, height):
         sa.fill_triangle(x - layer_w, layer_y + overlap,
                          x + layer_w, layer_y + overlap,
                          x, tip_y)
-
+#Attribution: This code was made by Gemini
 def draw_round_tree(x, y, height):
     """Draws a round/deciduous tree. x, y is the base center of the trunk."""
     trunk_w  = max(6, height // 8)
@@ -41,7 +41,7 @@ def draw_round_tree(x, y, height):
     sa.set_fill_color("#4e9e47")
     sa.set_outline_color("#4e9e47")
     sa.fill_circle(canopy_cx - int(canopy_r * 0.15), canopy_cy - int(canopy_r * 0.20), int(canopy_r * 0.45))
-    
+#Attribution: This code was made by Gemini
 def draw_frame(frame, elapsed, width, height):
     sa.fill_background("#87ceeb")
     sa.set_fill_color("#4a7c3f")
